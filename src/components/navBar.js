@@ -1,20 +1,26 @@
 import { NavLink } from "react-router-dom";
+import "../styles/navBar.css";
 
 export default function NavBar() {
   return (
-    <nav>
-      <NavLink to="/" end>
-        Home
-      </NavLink>
-      <NavLink to="/profile" end>
-        Profile
-      </NavLink>
-      <NavLink to="/mybooks" end>
-        My Books
-      </NavLink>
-      <NavLink to="/profile/settings" end>
-        Settings
-      </NavLink>
-    </nav>
+    <>
+      <ul className="nav-bar-container">
+        <li>
+          <NavLink to="/">Bookworm</NavLink>
+        </li>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/bookworm/profile">Profile</NavLink>
+        </li>
+        <li>
+          <NavLink to="/bookworm/mybooks">My Books</NavLink>
+        </li>
+        <li>
+          <NavLink to="/bookworm/profile/settings">Settings</NavLink>
+        </li>
+      </ul>
+    </>
   );
 }

@@ -1,7 +1,14 @@
+import NavBar from "../components/navBar";
+
 export default function Settings() {
   return (
-    <div>
-      <p> To implement Settings Page</p>
-    </div>
+    <>
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <p>To implement Settings page</p>
+      </div>
+    </>
   );
 }

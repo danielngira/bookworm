@@ -1,7 +1,14 @@
+import NavBar from "../components/navBar";
+
 export default function MyBooks() {
   return (
-    <div>
-      <p>To Implement My Books Page</p>
-    </div>
+    <>
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <p>To implement My Books page</p>
+      </div>
+    </>
   );
 }
