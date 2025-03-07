@@ -1,8 +1,7 @@
 export default function Settings() {
-  return(
+  return (
     <div>
-        <p> To implement Settings Page</p>
+      <p> To implement Settings Page</p>
     </div>
   );
 }
-
