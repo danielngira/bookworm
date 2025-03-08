@@ -21,6 +21,7 @@ export default function NavBar() {
           <NavLink to="/bookworm/profile/settings">Settings</NavLink>
         </li>
       </ul>
+      <hr></hr>
     </>
   );
 }
