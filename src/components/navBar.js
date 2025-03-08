@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <>
       <ul className="nav-bar-container">
-        <li>
+        <li className="logo">
           <NavLink to="/">Bookworm</NavLink>
         </li>
         <li>

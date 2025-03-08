@@ -7,8 +7,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 10px;
 }
 
 a.active {
-  color: rebeccapurple;
+  color: rgb(138, 98, 160);
 }
