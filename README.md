@@ -24,10 +24,11 @@
 
 - Text: Inter
 - Headings: Spectral
-- Nunito: Logo and Titles
+- Noto Serif: Logo and Titles
 
 **Colors**:
 
 - Primary: #FFFFFF
-- Secondary: 138,98,160
-- Tertiary: 240,240,141
+- Secondary: 138,98,160 - Purple
+- Tertiary: 240,240,141 - Yellow
+- Quaternary: #2c5782; - Blue
