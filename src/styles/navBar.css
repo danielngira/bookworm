@@ -6,16 +6,28 @@
 @tailwind utilities;
 
 .nav-bar-container {
+  --navbarheight: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
   align-items: center;
+  padding-right: 100px;
+  padding-right: 100px;
+  height: var(--navbarheight);
+}
+
+.fixed-navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: calc(0px - var(--navbarheight));
 }
 
 .logo a {
   display: flex;
   align-items: center;
+  margin-right: 50px;
+  margin-bottom: 5px;
 }
 
 .logo a.active {
@@ -29,4 +41,14 @@ a.active {
 .logo-half {
   color: black;
   font-weight: 300;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 20px;
 }
