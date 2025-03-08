@@ -9,7 +9,8 @@ export default function NavBar() {
         <li className="logo">
           <NavLink to="/">
             <img src={bookLogo} alt="Bookworm logo" className="logo-image" />
-            Bookworm
+            <span className="logo-half">Book</span>
+            <span>worm</span>
           </NavLink>
         </li>
         <li>

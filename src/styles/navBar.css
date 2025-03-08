@@ -25,3 +25,8 @@
 a.active {
   color: rgb(138, 98, 160);
 }
+
+.logo-half {
+  color: black;
+  font-weight: 300;
+}
