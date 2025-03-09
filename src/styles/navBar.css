@@ -43,10 +43,6 @@ a.active {
   font-weight: 300;
 }
 
-.logo:hover {
-  transform: scale(1.01);
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -85,4 +81,30 @@ li {
 
 .nav-bar-container li.logo a::after {
   content: none;
+}
+
+.search-bar {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 10px;
+  width: 40%;
+  font-family: "Inter", "Roboto", sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.search-bar:hover {
+  transform: scale(1.05);
+  border-width: 1.5px;
+  border-color: rgb(138, 98, 160);
+}
+
+.search-bar-input {
+  width: 90%;
+}
+
+.search-bar-input:focus {
+  outline: none;
+  box-shadow: none;
 }

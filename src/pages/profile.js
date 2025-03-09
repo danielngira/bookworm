@@ -20,12 +20,12 @@ function ProfileContent() {
 
 export default function Profile() {
   const location = useLocation();
-  let content = "";
+  let Content = "";
 
   if (location.pathname === "/bookworm/profile") {
-    content = <ProfileContent />;
+    Content = <ProfileContent />;
   } else if (location.pathname === "bookworm/profile/settings") {
-    content = <SettingsContent />;
+    Content = <SettingsContent />;
   }
 
   return (
@@ -35,7 +35,7 @@ export default function Profile() {
           <NavBar />
         </div>
         <div>
-          <p> {content} </p>
+          {Content}
           <Outlet />
         </div>
       </div>

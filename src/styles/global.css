@@ -17,7 +17,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Inter", "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 375; /* use a value from 100 to 900 */
+  font-weight: 400; /* use a value from 100 to 900 */
   box-sizing: border-box;
   padding-top: 60px;
   overflow-y: scroll;

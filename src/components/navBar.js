@@ -19,6 +19,16 @@ export default function NavBar() {
               <span>worm</span>
             </NavLink>
           </li>
+          <li className="search-bar">
+            <form>
+              <input
+                type="text"
+                placeholder="Search Books..."
+                id="searchBar"
+                className="search-bar-input"
+              />
+            </form>
+          </li>
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
