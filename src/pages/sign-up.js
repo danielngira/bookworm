@@ -1,7 +1,11 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../config/ firebase-config";
 import { useState } from "react";
+import { getAuth, signOut } from "firebase/auth";
 
 export default function Signup() {
   const [email, SetEmail] = useState(null);
@@ -51,6 +55,29 @@ export default function Signup() {
       const credential = GoogleAuthProvider.credentialFromError(error);
     }
   };
+
+  const SignInWithEmail = async (e) => {
+    e.preventDefault();
+    if (!email || password) {
+      console.error("Provide Email and Password");
+      return;
+    }
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password,
+      );
+
+      const user = userCredential.user;
+      console.log(user);
+    } catch (error) {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log("errorCode:", errorCode, "errorMessage:", errorMessage);
+    }
+  };
+
   return (
     <>
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
